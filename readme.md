@@ -2,6 +2,7 @@
 Teste PHP Carriers
 
 Instruções:
+
 Fornecer propriedades do banco no arquivo db.php, tabela funcionarios e campos criados conforme nome informado no teste;
 
 endpoints
@@ -10,18 +11,23 @@ Relatório geral de funcionários
 http://localhost/carriers/public/api/funcionarios
 
 Cadastrar
+
 http://localhost/carriers/public/api/funcionario/add
 
 Funcionário Específico
+
 http://localhost/carriers/public/api/funcionario/id_do_funcionario
 
 Editar
+
 http://localhost/carriers/public/api/funcionario/update/id_do_funcionario
 
 Remover
+
 http://localhost/carriers/public/api/funcionario/delete/id_do_funcionário
 
 _________________________________________________//__________________________________________________________________________________
+
 Exemplos
 
 relatório geral
@@ -54,6 +60,7 @@ sexo: "m"
 ]
 
 _________________________________________________//__________________________________________________________________________________
+
 Cadastrar
 request 
 POST http://localhost/carriers/public/api/funcionario/add
@@ -68,6 +75,7 @@ status 200 OK
 {"notice": {"text": "funcionario criado"}
 
 _________________________________________________//__________________________________________________________________________________
+
 Funcionário Específico
 GET http://localhost/carriers/public/api/funcionario/4
 response
@@ -81,6 +89,7 @@ sexo: "m"
 }
 
 _________________________________________________//__________________________________________________________________________________
+
 Editar funcionário
 request
 PUT http://localhost/carriers/public/api/funcionario/update/3
@@ -95,6 +104,7 @@ status 200 OK
 {"notice": {"text": "funcionario atualizado"}
 
 _________________________________________________//__________________________________________________________________________________
+
 Remover funcionário
 request
 DELETE http://localhost/carriers/public/api/funcionario/4
